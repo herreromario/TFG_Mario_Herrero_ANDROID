@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">StockMeal</string>
+    <string name="cargando">Cargando</string>
+    <string name="error">error</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="registrar_produccion">Registrar producción</string>
+    <string name="seleccionar_plato">Seleccionar plato</string>
+    <string name="recetas">Recetas</string>
+    <string name="stock">Stock</string>
+    <string name="produccion_de_hoy">Producción de hoy</string>
+    <string name="no_se_han_encontrado_registros">No se han encontrado registros</string>
+    <string name="detalles_de_la_receta">Detalles de la receta</string>
+    <string name="historico_produccion">Histórico de producción</string>
+    <string name="ver_historico">Ver histórico</string>
+</resources>
