@@ -24,8 +24,6 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
-import androidx.lifecycle.Lifecycle
-import androidx.lifecycle.compose.LifecycleEventEffect
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.stockmeal.R
 import com.example.stockmeal.ui.state.AppUIState
@@ -37,10 +35,6 @@ fun PantallaRecetas(
     viewModel: RecetasViewModel = viewModel(factory = RecetasViewModel.Factory),
     onDetallesReceta: (Int) -> Unit
 ) {
-    LifecycleEventEffect(Lifecycle.Event.ON_RESUME) {
-        viewModel.obtenerRecetas()
-    }
-
     val recetasState = viewModel.recetasState
 
     when (recetasState) {

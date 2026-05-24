@@ -42,8 +42,6 @@ import com.example.stockmeal.R
 import com.example.stockmeal.ui.state.AppUIState
 import com.example.stockmeal.ui.viewmodel.IngredienteStockUI
 import com.example.stockmeal.ui.viewmodel.StockViewModel
-import androidx.lifecycle.Lifecycle
-import androidx.lifecycle.compose.LifecycleEventEffect
 
 @Composable
 fun Stock(
@@ -51,10 +49,6 @@ fun Stock(
     filtrarAlertasInicialmente: Boolean = false,
     viewModel: StockViewModel = viewModel(factory = StockViewModel.Factory)
 ) {
-    LifecycleEventEffect(Lifecycle.Event.ON_RESUME) {
-        viewModel.obtenerIngredientesStock()
-    }
-
     val stockState = viewModel.stockState
 
     when (stockState) {
